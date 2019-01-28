@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
   # @student.first_name = params[:first_name]
   # @student.last_name = params[:last_name]
   # @student.save
-  Post.create(first_name: params[:first_name], last_name: params[:last_name])
+  Student.create(first_name: params[:first_name], last_name: params[:last_name])
   redirect_to post_path(@student)
   end
 
